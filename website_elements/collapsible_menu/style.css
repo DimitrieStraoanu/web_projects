@@ -14,50 +14,36 @@
     float: left;
     margin-right: 0.5em;
     transition: transform 0.3s ease-in-out;
-       
-
-    /* border:1px solid black; */
-    
-
 }
 
 .menuButton {
-    /* border:1px solid black; */
-    color:white;
-    display: block;
-    background: #808080;
     cursor: pointer;
+    overflow: hidden;
+    display: block;
+    color:rgb(173, 173, 173);
+    background: #eeeeee;
+    border: 1px solid #dadada;
     font-size: 2em;
     padding: 0.4em 0.8em;
     border-radius: 0.3em;
     margin: 1em;
-    overflow: hidden;
     height:1.2em;
-    
+    box-shadow: 5px 5px 8px rgb(27, 27, 27, 0.5);
     transition: height 0.3s ease-in-out;
-    
-    
-    
-    
-    
 }
 
 .menuButtonText {
-    /* border:1px solid black; */
     float: left;
     text-transform: uppercase;
     font-weight: 600;
     font-family: "Oxygen", sans-serif;
     letter-spacing: 0.1em;
-    
 }
 
 #menuCheckbox:checked~.menuButton>.menuIcon::before{
     transform: rotate(180deg);
-
 }
 
-#menuCheckbox:checked+.menuButton{
+#menuCheckbox:checked~.menuButton{
     height:10em;
-    
 }
