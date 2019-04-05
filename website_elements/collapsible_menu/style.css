@@ -1,0 +1,63 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+}
+#menuCheckbox{
+    display: none;
+}
+.menuIcon::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.2em;
+    content: "\f078";
+    float: left;
+    margin-right: 0.5em;
+    transition: transform 0.3s ease-in-out;
+       
+
+    /* border:1px solid black; */
+    
+
+}
+
+.menuButton {
+    /* border:1px solid black; */
+    color:white;
+    display: block;
+    background: #808080;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 0.4em 0.8em;
+    border-radius: 0.3em;
+    margin: 1em;
+    overflow: hidden;
+    height:1.2em;
+    
+    transition: height 0.3s ease-in-out;
+    
+    
+    
+    
+    
+}
+
+.menuButtonText {
+    /* border:1px solid black; */
+    float: left;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Oxygen", sans-serif;
+    letter-spacing: 0.1em;
+    
+}
+
+#menuCheckbox:checked~.menuButton>.menuIcon::before{
+    transform: rotate(180deg);
+
+}
+
+#menuCheckbox:checked+.menuButton{
+    height:10em;
+    
+}
