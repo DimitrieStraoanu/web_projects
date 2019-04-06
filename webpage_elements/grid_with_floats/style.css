@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Adds space around all .col. Divide .container margin value / number of colums */
+.margins {
+    margin: 2% 2%;
+}
+
+.col {
+    float: left;
+
+    /* Sets the number of columns on a row. Ex: 100% - 1col, 50% - 2col, 33.33% - 3col */
+    width: 50%;
+}
+
+.container {
+    /* Center horizontal and vertical inside the .col and adds space between .content*/
+    margin: 4% 4%;
+}
+
+/* .content width is auto */
+.content {
+    padding: 1em;
+    background: lightblue;
+    border: 1px solid rgb(180, 209, 226);
+    border-radius: 0.4em;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(51, 51, 51, 0.3);
+}
+
+.avatar {
+    float: left;
+    background: white;
+    height: 6em;
+    width: 6em;
+    border-radius: 3em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+}
+
+.content>h1 {
+    min-width: 60%;
+    overflow: hidden;
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    color: #666;
+    background: white;
+    border-radius: 0.2em;
+}
+
+.content>p {
+    color: #666;
+    overflow: hidden;
+    background: white;
+    border-radius: 0.4em;
+    padding: 0.5em;
+}
