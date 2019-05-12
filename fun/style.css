@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bookBanner {
+
+  text-align: center;
+  color: white;
+  background: rgb(175, 12, 12);
+  padding: 2em;
+
+}
+
+
+
+.bookText {
+  height: 120px;
+  transition: height 0.5s ease;
+
+
+}
+
+button {
+  color: rgb(175, 12, 12);
+  height: 60px;
+  cursor: pointer;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 0.25em 0.5em;
+  transition: height 0.5s ease;
+
+
+}
+
+.hide {
+  height: 0;
+  overflow: hidden;
+  color: rgba(0, 0, 0, 0);
+}
+
+.circle{
+  height: 100px;
+  width:100px;
+  background: rgb(47, 93, 47);
+  border-radius: 50%;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translateX(-50px) translateY(-50px);
+  cursor: pointer;
+}
+
+.fancy{
+  background: yellow;
+  border: 5px solid black;
+}

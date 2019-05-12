@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  text-align: center;
+
+}
+
+.header {
+  background: lightblue;
+  padding: 1em;
+}
+
+.testText {
+  padding: 1em;
+  background: lightcyan;
+  margin-bottom: 1em;
+}
+
+.testArea {
+  border: 1em solid grey;
+  padding: 0.5em;
+  border-radius: 1em;
+}
+
+.testArea:focus {
+  outline: none;
+}
+
+#resetBtn {
+  background: white;
+  color: rgb(185, 54, 54);
+  border: 0.5em solid rgb(185, 54, 54);
+  border-radius: 0.5em;
+  padding: 1em 2em;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#resetBtn:hover {
+  background: rgb(185, 54, 54);
+  color:white;
+}
+
+#resetBtn:focus {
+  outline: none;
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Form</title>
+  <meta name="author" content="Dimitrie Straoanu">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+
+</head>
+
+<body>
+
+  <form id="signUpForm" action="signup.php" method="POST">
+
+    <div class="formInput">
+      <label for="firstName">First name:</label>
+      <input type="text" name="First Name" id="firstName">
+      <p class="hintMsg">Enter first name</p>
+    </div>
+
+    <div class="formInput">
+      <label for="lastName">Last name:</label>
+      <input type="text" name="Last Name" id="lastName">
+      <p class="hintMsg">Enter last name</p>
+    </div>
+
+    <div class="formInput">
+      <label for="password">Password:</label>
+      <input type="password" name="Password" id="password">
+      <p class="hintMsg">Enter password</p>
+    </div>
+
+    <div class="formInput">
+      <label for="confirmPassword">Confirm password:</label>
+      <input type="password" name="Confirm Password" id="confirmPassword">
+      <p class="hintMsg">Confirm password</p>
+    </div>
+
+    <div class="formInput">
+      <label for="email">Email:</label>
+      <input type="text" name="Email" id="email">
+      <p class="hintMsg">Enter email address</p>
+    </div>
+
+    <div class="formInput">
+      <label for="phone">Phone number:</label>
+      <input type="text" name="Phone number" id="phone">
+      <p class="hintMsg">Enter phone number</p>
+    </div>
+
+    <div class="formInput">
+      <label>Birthdate:</label>
+      <select name="Day" id="day">
+        <option value="">Day</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+      <select name="Month" id="month">
+        <option value="">Month</option>
+        <option value="1">Jan</option>
+        <option value="2">Feb</option>
+      </select>
+      <select name="Year" id="year">
+        <option value="">Year</option>
+        <option value="2019">2019</option>
+        <option value="2018">2018</option>
+      </select>
+      <p class="hintMsg">Select birthdate</p>
+    </div>
+
+    <div class="formInput">
+      <label>Gender:</label>
+      <label for="male">Male</label>
+      <input type="radio" name="Gender" id="male" value="male">
+      <label for="female">Female</label>
+      <input type="radio" name="Gender" id="female" value="female">
+      <label for="other">Other</label>
+      <input type="radio" name="Gender" id="other" value="other">
+      <p class="hintMsg">Select gender</p>
+    </div>
+
+    <div class="formBtn">
+      <button id="sendFormBtn">Send</button>
+      <button id="resetFormBtn">Reset</button>
+      <p class="hintMsg">All fields are required</p>
+    </div>
+
+  </form>
+
+</body>
+
+</html>

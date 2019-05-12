@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+form {
+
+  float: left;
+  margin: 1em;
+  padding: 1em;
+  border: 1px solid rgb(182, 182, 182);
+
+}
+
+label {
+  float: left;
+}
+
+
+select {
+  margin-left: 0.2em;
+  padding: 0.2em;
+  width: 5em;
+
+}
+
+input[type="text"],
+input[type="password"] {
+  margin-left: 1em;
+  padding: 0.2em;
+  width: 17em;
+
+}
+
+input[type="radio"] {
+  vertical-align: middle;
+
+}
+
+[for="female"] {
+  margin-left: 0.8em;
+  float: none;
+}
+
+[for="male"] {
+  float: none;
+}
+
+[for="other"] {
+  margin-left: 0.8em;
+  float: none;
+}
+
+.formInput {
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border: 1px solid rgb(216, 216, 216);
+  overflow: hidden;
+  text-align: right;
+}
+
+.formInput:last-of-type {
+  padding: 0;
+  margin-bottom: 0;
+  border: none;
+
+}
+
+.formBtn p {
+  float: right;
+}
+
+button {
+  padding: 0.3em 1em;
+  margin-right: 1em;
+}
+
+.hintMsg {
+  color: rgb(200, 200, 200);
+  height: 1em;
+  font-size: 90%;
+  margin-top: 0.4em;
+}
+
+.redBorder {
+  border: 1px solid red;
+}
+
+.redText {
+  color: red;
+}
