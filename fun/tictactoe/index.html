@@ -1,31 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe</title>
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
+
 <body>
-    <table id="gameBoard">
-        <tbody>
-            <tr>
-                <td class="cell" id="0"></td>
-                <td class="cell" id="1"></td>
-                <td class="cell" id="2"></td>
-            </tr>
-            <tr>
-                <td class="cell" id="3"></td>
-                <td class="cell" id="4"></td>
-                <td class="cell" id="5"></td>
-            </tr>
-            <tr>
-                <td class="cell" id="6"></td>
-                <td class="cell" id="7"></td>
-                <td class="cell" id="8"></td>
-            </tr>
-        </tbody>
-    </table>
+    <div class="content">
+        <div class="scoreBoard">
+            <h2>Welcome to the TicTacToe game</h2>
+            <h3>Score board</h3>
+            <span id="scoreX">player-<b>X</b>: 0</span>
+            <button id="scoreBtn">Reset score</button>
+            <span id="scoreO">player-<b>O</b>: 0</span>
+        </div>
+        
+        <table id="gameBoard">
+            <tbody>
+                <tr>
+                    <td class="cell" id="0"></td>
+                    <td class="cell" id="1"></td>
+                    <td class="cell" id="2"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="3"></td>
+                    <td class="cell" id="4"></td>
+                    <td class="cell" id="5"></td>
+                </tr>
+                <tr>
+                    <td class="cell" id="6"></td>
+                    <td class="cell" id="7"></td>
+                    <td class="cell" id="8"></td>
+                </tr>
+            </tbody>
+        </table>
+    
+        <div class="interface">
+            <p id="helper">Click button to play.</p>
+            <button id="startBtn">Start</button>
+        </div>
+    </div>
+
 </body>
+
 </html>

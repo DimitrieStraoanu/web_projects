@@ -1,12 +1,54 @@
+* {
+    box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
+    margin: 0;
+    padding: 0;
+}
+#scoreBtn{
+    font-size:70%;
+    padding:0.2em;
+}
+.win{
+    background: rgb(87, 192, 46);
+}
+
+.content {
+    display: table;
+    margin: auto;
+    margin-top:1em;
+    padding:1em;
+}
+
+.scoreBoard {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.interface {
+    text-align: center;
+}
+
 table {
     border-collapse: collapse;
+    margin: auto;
+    margin-bottom: 1em;
 }
 
 td {
-    font-size: 3em;
+    font-size: 2.5em;
     text-align: center;
     border: 1px solid black;
     height: 60px;
     width: 60px;
     cursor: pointer;
+}
+
+button{
+    cursor:pointer;
+    margin-top:0.5em;
+    font-weight: bold;
+    padding: 0.5em 1em;
+}
+span:first-of-type{
+    margin-right:0.5em;
 }
