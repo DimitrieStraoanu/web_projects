@@ -1,0 +1,12 @@
+[
+    "Hello world!",
+    "Are you ready?",
+    [3,2,1,0],
+    "Let's go!",    
+    {
+        "name": "Luna",
+        "species":"dog",
+        "breed":"boxer",
+        "gender":"female"        
+    }
+]
