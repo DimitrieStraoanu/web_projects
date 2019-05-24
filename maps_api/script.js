@@ -2,35 +2,39 @@
 
 window.addEventListener('DOMContentLoaded', function () {
     document.getElementById('findBtn').addEventListener('click', start);
-    initMap(); 
+    initMap();
 });
 var placeQuery;
 var place;
 var map;
 var options;
-var markers=[];
+var marker;
 
-function start(){
+function start() {
     placeQuery = document.getElementById('queryInput').value;
-    if(placeQuery){               
-        findPlace();        
+    if (placeQuery) {
+        findPlace();
     }
 }
 
 function initMap() {
     options = {
-        center: { lat: 45, lng: 25 },
+        center: {
+            lat: 45,
+            lng: 25
+        },
         zoom: 5
     };
     map = new google.maps.Map(document.getElementById('map'), options);
 }
 
 function addMarker() {
-    var marker = new google.maps.Marker({
+    if (marker)
+        marker.setMap(null);
+    marker = new google.maps.Marker({
         position: place.geometry.location,
         map: map
     });
-    markers.push(marker);
 }
 
 function findPlace() {
@@ -41,9 +45,9 @@ function findPlace() {
     var service = new google.maps.places.PlacesService(map);
     service.findPlaceFromQuery(request, function (results, status) {
         if (status === 'OK') {
-            place = results[0];            
+            place = results[0];
             map.setCenter(place.geometry.location);
-            if (place.types.includes('route')||place.types.includes('point_of_interest')) {
+            if (place.types.includes('route') || place.types.includes('point_of_interest')) {
                 map.setZoom(15);
             } else if (place.types.includes('locality')) {
                 map.setZoom(10);
@@ -56,7 +60,7 @@ function findPlace() {
             console.log(place.formatted_address);
             console.log(place.geometry.location.lat());
             console.log(place.geometry.location.lng());
-        } else{
+        } else {
             console.log(status);
         }
     });
